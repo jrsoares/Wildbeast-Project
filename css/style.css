@@ -179,6 +179,41 @@ p {
   margin-top: 30px;
 }
 
+.highlights {
+  font-size: 0.875rem;
+  color: #b07dfb;
+  font-weight: 700;
+  max-width: 16rem;
+}
+
+.quote,
+.info-attributes {
+  align-self: start;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  box-shadow: 5px 5px 15px rgba(44, 44, 44, 0.15);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.quote p {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.info-attributes li {
+  color: #fff;
+  font-family: Courier, monospace;
+  font-size: 1.125rem;
+  padding: 15px;
+}
+
+.info-attributes li + li {
+  border-top: 2px solid #b07dfb;
+}
 .adverts {
   grid-area: adverts;
   background: #fafbfc;
