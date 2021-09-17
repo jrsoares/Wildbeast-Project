@@ -22,7 +22,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 5px;
   display: block;
 }
@@ -164,6 +164,7 @@ p {
 .col-wide {
   grid-column: 1 / -1;
 }
+
 .content {
   grid-area: content;
   max-width: 900px;
@@ -172,6 +173,14 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
 }
 
 .title {
@@ -275,6 +284,7 @@ p {
 .info-attributes li + li {
   border-top: 2px solid #b07dfb;
 }
+
 .adverts {
   grid-area: adverts;
   background: #fafbfc;
@@ -282,6 +292,7 @@ p {
   align-content: start;
   padding: 30px;
   gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .footer {
